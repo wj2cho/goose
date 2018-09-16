@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Derivatives Pricer</title>
+    <h1>Derivatives Pricer</h1>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+</head>
+
+<body>
+    <form method="POST">
+        <fieldset>
+            <label for="expiry">expiry: </label><input type="text" id="expiry" size="8">
+            <br>
+            <label for="strike">strike: </label><input type="text" id="strike" size="8">
+            <br>
+            <label for="spot">spot: </label><input type="text" id="spot" size="8">
+            <br>
+            <label for="volume">volume: </label><input type="text" id="volume" size="8">
+            <br>
+            <label for="r">r: </label><input type="text" id="r" size="8">
+            <br>
+            <label for="numPaths">numPaths: </label><input type="text" id="numPaths" size="8">
+            <br>
+            <label for="calculate"><button onclick="calculate()">Calculate</button></label>
+        </fieldset>
+    </form>
+    <div id="result">
+
+    </div>
+    <script src="{{ url_for('static', filename='main.js') }}" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+</html>

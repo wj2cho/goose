@@ -1,0 +1,13 @@
+label{
+    display:inline-block;
+    width:64px;
+    margin-right:10px;
+    text-align:left;
+}
+
+fieldset{
+    border:none;
+    width:200px;
+    margin:0px;
+}
+
